@@ -1,0 +1,26 @@
+//Java program to calculate the average of a student and display the class grade of a student
+
+import java.io.*;
+import java.util.*;
+public class StudentAverage{
+public static void main(String[]args){
+int m1,m2,m3;
+System.out.println("Enter marks of three students");
+Scanner sc=new scanner(System.in)
+int m1=sc.nextInt();
+int m2=sc.nextInt();
+int m3=sc.nextInt();
+int total=m1+m2+m3;
+float avg=(float)total/3;
+if(avg>=75)
+{
+System.out.println("Student passed in distinction");
+else if(avg>=60&&avg<75)
+{
+System.out.print("Student passed in first class");
+else if(avg>=50&& avg<60)
+System.out.println("Student passed in second class");
+else
+System.out.println("Student failed in exam");
+}
+} 
